@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Rohit Kumar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>☁️ Weather App</h1>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="searchWeather()" class="search-btn">
+                Search
+            </button>
+        </div>
+
+        <!-- Extra Buttons -->
+        <div class="action-buttons">
+            <button onclick="getLocationWeather()" class="location-btn">
+                📍 My Location
+            </button>
+
+            <button onclick="toggleMode()" class="toggle-btn">
+                🌙 Toggle Mode
+            </button>
+        </div>
+
+        <!-- Weather Display -->
+        <div class="weather-box">
+
+            <h2 id="cityName">City</h2>
+            <h1 id="temp">--°C</h1>
+            <p id="desc">Weather Description</p>
+            <p id="feels-like">Feels Like: --°C</p>
+
+            <div class="details">
+                <p>💧 Humidity: <span id="humidity">--</span>%</p>
+                <p>🌬 Wind: <span id="wind">--</span> km/h</p>
+                <p>🌡 Pressure: <span id="pressure">--</span></p>
+            </div>
+
+            <h2>📅 5 Day Forecast</h2>
+            <div id="forecast"></div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Rohit Kumar. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
