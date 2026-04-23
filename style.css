@@ -137,16 +137,63 @@ footer {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
     h1 {
-        font-size: 28px;
+        font-size: 32px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .search-box input {
         width: 100%;
+        max-width: 100%;
+    }
+
+    .extra-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .extra-buttons button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .weather-box {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    #forecast {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
     }
 
     .day {
-        width: 100%;
-        max-width: 180px;
+        width: 90%;
+        max-width: 250px;
+    }
+
+    footer {
+        font-size: 14px;
+        margin-top: 20px;
     }
 }
